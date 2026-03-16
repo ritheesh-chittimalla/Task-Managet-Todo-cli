@@ -1,0 +1,128 @@
+.dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  color: #f1f5f9;
+  font-size: 1.6rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.dashboard-header p {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.btn-new-task {
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.btn-new-task:hover { background: #0ea5e9; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  border-top: 3px solid #334155;
+}
+
+.stat-count {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.progress-bar {
+  background: #334155;
+  border-radius: 20px;
+  height: 6px;
+  margin-top: 0.6rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: #a78bfa;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  color: #f1f5f9;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.view-all {
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.view-all:hover { text-decoration: underline; }
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #64748b;
+  background: #1e293b;
+  border-radius: 12px;
+}
+
+.empty-state p { margin-bottom: 1rem; }
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #64748b;
+  font-size: 1.1rem;
+  background: #0f172a;
+}
